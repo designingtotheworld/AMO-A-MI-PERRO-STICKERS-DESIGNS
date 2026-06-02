@@ -1,0 +1,6 @@
+{
+  "name": "Oferta de Producto",
+  "description": "App to manage and display new product offers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
