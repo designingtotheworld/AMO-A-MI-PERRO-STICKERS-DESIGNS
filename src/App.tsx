@@ -8,10 +8,20 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Check, Star, Sparkles, Image as ImageIcon } from 'lucide-react';
 
 export default function App() {
+  const [purchasers, setPurchasers] = useState(48);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPurchasers(prev => prev + Math.floor(Math.random() * 3));
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
       {/* Hero Section */}
@@ -73,7 +83,7 @@ export default function App() {
             </div>
 
             <motion.button 
-              className="bg-cyan-500 text-white px-8 py-4 rounded-full font-medium hover:bg-cyan-600 transition"
+              className="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition"
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
@@ -81,12 +91,23 @@ export default function App() {
             </motion.button>
             <p className="mt-4 text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana para garantizar la calidad</p>
             <motion.button 
-              className="mt-4 flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-3 px-6 w-fit mx-auto border border-green-700 font-semibold text-sm shadow-sm transition-all"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="mt-4 flex justify-center items-center gap-2 text-white bg-black hover:bg-gray-800 rounded-full py-3 px-6 w-fit mx-auto border border-black font-semibold text-sm shadow-sm transition-all"
+              animate={{ y: [0, -5, 0] }}
+              transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
             >
               <span>RESERVA TU LUGAR YA</span>
             </motion.button>
+
+            <div className="mt-8 mb-6 inline-block">
+                <div className="flex items-center gap-3 bg-yellow-400 text-gray-900 px-6 py-4 rounded-xl border border-yellow-500 shadow-lg">
+                    <div className="text-4xl font-mono text-gray-900 font-bold tabular-nums tracking-wider">
+                        {purchasers}
+                    </div>
+                    <div className="text-xs border-l border-yellow-600 pl-3 leading-tight uppercase tracking-wide font-medium text-gray-800">
+                        personas encargando <br/>en este momento
+                    </div>
+                </div>
+            </div>
           </div>
         </motion.div>
       </header>
@@ -205,11 +226,20 @@ export default function App() {
       </section>
 
       {/* Precio & Bono */}
-      <section className="py-20 px-6 text-center bg-blue-50">
-        <div className="max-w-xl mx-auto">
-          <h2 className="text-4xl font-medium">Colección Pasiones Argentinas</h2>
-          <p className="mt-4 text-gray-700">Tener a una plancha de stickers de tu propia mascota no tiene precio. Encargala ya por 24999 pesos argentinos.</p>
-          <button className="mt-10 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-medium hover:bg-yellow-300 transition">Comprar en Mercado Libre</button>
+      <section className="py-20 px-6 text-center">
+        <div className="max-w-xl mx-auto bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
+          <h2 className="text-3xl font-medium text-gray-900">Colección Pasiones Argentinas</h2>
+          <p className="mt-6 text-xl text-gray-600">Tener una plancha de stickers de tu propia mascota no tiene precio.</p>
+          <div className="mt-8">
+            <p className="text-lg font-semibold text-gray-700">ENCÁRGALA HOY POR SÓLO</p>
+            <div className="mt-2 text-5xl font-extrabold text-gray-900">
+              $ARS 24.999
+            </div>
+          </div>
+          
+          <button className="mt-10 w-full bg-yellow-400 text-gray-900 py-5 rounded-2xl font-bold text-lg hover:bg-yellow-300 transition transform hover:scale-105 active:scale-95 shadow-lg">
+            Comprar ahora en Mercado Libre
+          </button>
         </div>
       </section>
     </div>
