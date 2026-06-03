@@ -58,7 +58,7 @@ export default function App() {
 
           <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
             <motion.button 
-              className="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition"
+              className="bg-yellow-400 text-black px-8 py-4 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg text-lg"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
@@ -66,7 +66,7 @@ export default function App() {
             </motion.button>
             <p className="text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana</p>
             <motion.button 
-              className="bg-green-600 text-white px-8 py-4 rounded-full font-medium hover:bg-green-700 transition"
+              className="bg-black text-white px-8 py-4 rounded-full font-bold hover:bg-gray-800 transition shadow-lg text-lg"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
             >
