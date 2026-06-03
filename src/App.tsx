@@ -45,7 +45,7 @@ export default function App() {
           <img
             src="https://i.imgur.com/GKTjyHH.png"
             alt="Ejemplo de stickers de mascota"
-            className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-12"
+            className="w-full mx-auto rounded-xl shadow-lg mb-12"
             referrerPolicy="no-referrer"
           />
 
@@ -62,7 +62,7 @@ export default function App() {
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
-              Quiero la colección de mi mascota ahora
+              ¡Quiero mi colección ahora!
             </motion.button>
             <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
             <motion.button 
@@ -80,7 +80,7 @@ export default function App() {
           </div>
 
           <span className="text-sm font-semibold tracking-widest text-sky-500 uppercase">Colección Pasiones Argentinas</span>
-          <h1 className="mt-4 text-4xl md:text-5xl font-display tracking-tight text-gray-900">
+          <h1 className="mt-4 text-5xl md:text-6xl font-display tracking-tight text-gray-900">
             Convertí a tu mascota en parte de tu pasión.<br />
             Plancha de 10 stickers UV DTF premium personalizados con su foto.
           </h1>
@@ -171,26 +171,26 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <h3 className="text-3xl font-display font-medium text-center mb-16">Lo que te entregamos</h3>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-100 p-8 rounded-2xl border border-gray-200 flex flex-col items-center text-center">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 flex flex-col items-center text-center">
               <div className="p-3 bg-white rounded-full mb-6 shadow-sm">
                 <ImageIcon className="text-cyan-400 w-6 h-6" />
               </div>
-              <h4 className="font-semibold text-lg mb-3 text-blue-900">Diseño personalizado</h4>
-              <p className="text-blue-900 text-sm">Ilustramos a tu mascota en la "Colección Pasiones Argentinas" de forma exclusiva para vos.</p>
+              <h4 className="font-semibold text-lg mb-3 text-white">Diseño personalizado</h4>
+              <p className="text-gray-300 text-sm">Ilustramos a tu mascota en la "Colección Pasiones Argentinas" de forma exclusiva para vos.</p>
             </div>
-            <div className="bg-gray-100 p-8 rounded-2xl border border-gray-200 flex flex-col items-center text-center">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 flex flex-col items-center text-center">
               <div className="p-3 bg-white rounded-full mb-6 shadow-sm">
                 <Star className="text-cyan-400 w-6 h-6" />
               </div>
-              <h4 className="font-semibold text-lg mb-3 text-blue-900">Kit UV DTF Premium</h4>
-              <p className="text-blue-900 text-sm">Plancha con 10 stickers, alta resistencia, brillante y duradera. Producto físico listo para usar.</p>
+              <h4 className="font-semibold text-lg mb-3 text-white">Kit UV DTF Premium</h4>
+              <p className="text-gray-300 text-sm">Plancha con 10 stickers, alta resistencia, brillante y duradera. Producto físico listo para usar.</p>
             </div>
-            <div className="bg-gray-100 p-8 rounded-2xl border border-gray-200 flex flex-col items-center text-center">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 flex flex-col items-center text-center">
               <div className="p-3 bg-white rounded-full mb-6 shadow-sm">
                 <Sparkles className="text-cyan-400 w-6 h-6" />
               </div>
-              <h4 className="font-semibold text-lg mb-3 text-blue-900">Envío directo a tu hogar</h4>
-              <p className="text-blue-900 text-sm">Compra en Mercado Libre, mandanos la foto, y recibí tu kit personalizado en tu domicilio.</p>
+              <h4 className="font-semibold text-lg mb-3 text-white">Envío directo a tu hogar</h4>
+              <p className="text-gray-300 text-sm">Compra en Mercado Libre, mandanos la foto, y recibí tu kit personalizado en tu domicilio.</p>
             </div>
           </div>
         </div>
