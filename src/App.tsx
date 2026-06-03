@@ -43,16 +43,16 @@ export default function App() {
 
 
           <img
-            src="https://i.imgur.com/GKTjyHH.png"
+            src="https://i.imgur.com/K1NIHpu.png"
             alt="Ejemplo de stickers de mascota"
-            className="w-full mx-auto rounded-xl shadow-lg mb-12"
+            className="w-full rounded-xl shadow-lg mb-12"
             referrerPolicy="no-referrer"
           />
 
           <img
-            src="https://i.imgur.com/4iM430I.png"
+            src="https://i.imgur.com/SCzrad7.png"
             alt="Detalle adicional de stickers"
-            className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-12"
+            className="w-full rounded-xl shadow-lg mb-12"
             referrerPolicy="no-referrer"
           />
 
@@ -75,7 +75,7 @@ export default function App() {
             <div className="mt-4 bg-yellow-400 p-6 rounded-3xl shadow-2xl border border-yellow-500 text-center">
               <div className="text-lg font-semibold text-gray-700 uppercase tracking-widest">Encargala hoy por solo:</div>
               <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 24.999</div>
-              <p className="mt-1 text-gray-800 italic font-medium">Comprala por Mercado Libre</p>
+              <p className="mt-1 text-gray-800 italic font-medium">¡Pedila ahora desde nuestra tienda!</p>
             </div>
           </div>
 
@@ -157,7 +157,7 @@ export default function App() {
             
           <h2 className="text-4xl font-display font-medium">¿Cómo recibo mi colección?</h2>
           <div className="mt-8 grid md:grid-cols-4 gap-6 text-lg font-semibold">
-            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">1. Comprás la plancha en Mercado Libre.</div>
+            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">1. Comprás la plancha en nuestra tienda.</div>
             <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">2. Nos mandás la foto de tu mascota por mensaje.</div>
             <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">3. Diseñamos e imprimimos en tecnología UV DTF.</div>
             <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">4. Recibís el kit terminado en tu casa.</div>
@@ -190,7 +190,7 @@ export default function App() {
                 <Sparkles className="text-cyan-400 w-6 h-6" />
               </div>
               <h4 className="font-semibold text-lg mb-3 text-white">Envío directo a tu hogar</h4>
-              <p className="text-gray-300 text-sm">Compra en Mercado Libre, mandanos la foto, y recibí tu kit personalizado en tu domicilio.</p>
+              <p className="text-gray-300 text-sm">Compra en nuestra tienda, mandanos la foto, y recibí tu kit personalizado en tu domicilio.</p>
             </div>
           </div>
         </div>
@@ -245,6 +245,12 @@ export default function App() {
              <img src="https://i.imgur.com/zRLdSxC.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/1v94WvA.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/EPmGZDg.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
+             <img src="https://i.imgur.com/AnHF9ML.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
+             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
+             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
+             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
+             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
+             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
           </div>
         </div>
       </section>
@@ -252,8 +258,7 @@ export default function App() {
       {/* Precio & Bono */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-xl mx-auto bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
-          <h2 className="text-3xl font-medium text-gray-900">Colección Pasiones Argentinas</h2>
-          <p className="mt-6 text-xl text-gray-600">Tener una plancha de stickers de tu propia mascota no tiene precio.</p>
+          <p className="mt-6 text-2xl md:text-3xl font-bold text-gray-900">Tener una plancha de stickers de tu propia mascota no tiene precio.</p>
           <div className="mt-8">
             <p className="text-lg font-semibold text-gray-700">ENCÁRGALA HOY POR SÓLO</p>
             <div className="mt-2 text-5xl font-extrabold text-gray-900">
@@ -262,7 +267,7 @@ export default function App() {
           </div>
           
           <button className="mt-10 w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-900 py-6 rounded-2xl font-bold text-xl hover:from-yellow-300 hover:to-yellow-200 transition transform hover:scale-105 active:scale-95 shadow-lg">
-            Comprar ahora en Mercado Libre
+            ENCARGÁ LA TUYA AHORA
           </button>
         </div>
       </section>
