@@ -58,20 +58,25 @@ export default function App() {
 
           <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
             <motion.button 
-              className="bg-yellow-400 text-black px-8 py-4 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg text-lg"
+              className="bg-yellow-400 text-black px-10 py-5 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
               Quiero la colección de mi mascota ahora
             </motion.button>
-            <p className="text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana</p>
+            <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
             <motion.button 
-              className="bg-black text-white px-8 py-4 rounded-full font-bold hover:bg-gray-800 transition shadow-lg text-lg"
+              className="bg-gradient-to-r from-green-600 to-green-500 text-white px-10 py-5 rounded-full font-bold hover:from-green-500 hover:to-green-400 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
             >
               RESERVA TU LUGAR YA
             </motion.button>
+            <div className="mt-4 bg-yellow-400 p-6 rounded-3xl shadow-2xl border border-yellow-500 text-center">
+              <div className="text-lg font-semibold text-gray-700 uppercase tracking-widest">Encargala hoy por solo:</div>
+              <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 24.999</div>
+              <p className="mt-1 text-gray-800 italic font-medium">Comprala por Mercado Libre</p>
+            </div>
           </div>
 
           <span className="text-sm font-semibold tracking-widest text-sky-500 uppercase">Colección Pasiones Argentinas</span>
@@ -151,13 +156,13 @@ export default function App() {
           </div>
             
           <h2 className="text-4xl font-display font-medium">¿Cómo recibo mi colección?</h2>
-          <div className="mt-8 grid md:grid-cols-4 gap-4 text-base font-semibold">
-            <div className="p-4 bg-white rounded-lg text-blue-900">1. Comprás la plancha en Mercado Libre.</div>
-            <div className="p-4 bg-white rounded-lg text-blue-900">2. Nos mandás la foto de tu mascota por mensaje.</div>
-            <div className="p-4 bg-white rounded-lg text-blue-900">3. Diseñamos e imprimimos en tecnología UV DTF.</div>
-            <div className="p-4 bg-white rounded-lg text-blue-900">4. Recibís el kit terminado en tu casa.</div>
+          <div className="mt-8 grid md:grid-cols-4 gap-6 text-lg font-semibold">
+            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">1. Comprás la plancha en Mercado Libre.</div>
+            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">2. Nos mandás la foto de tu mascota por mensaje.</div>
+            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">3. Diseñamos e imprimimos en tecnología UV DTF.</div>
+            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">4. Recibís el kit terminado en tu casa.</div>
           </div>
-          <p className="mt-6 text-sky-100 italic text-base">* Importante: Los 5 diseños son fijos. No hace falta aprobar diseño. Envianos una foto clara y de frente de tu mascota para mejor resultado.</p>
+          <p className="mt-8 text-sky-100 italic text-lg opacity-90">* Importante: Los 5 diseños son fijos. No hace falta aprobar diseño. Envianos una foto clara y de frente de tu mascota para mejor resultado.</p>
         </div>
       </section>
 
@@ -191,11 +196,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Precio destaque */}
-      <section className="py-12 bg-gray-100 text-center">
-         <div className="text-xl font-semibold text-gray-800">Encargala hoy por solo:</div>
-         <div className="text-5xl font-bold text-gray-900 mt-2">$ARS 24.999</div>
-      </section>
 
       {/* Opiniones */}
       <section className="py-20 px-6 bg-gray-50">
@@ -261,7 +261,7 @@ export default function App() {
             </div>
           </div>
           
-          <button className="mt-10 w-full bg-yellow-400 text-gray-900 py-5 rounded-2xl font-bold text-lg hover:bg-yellow-300 transition transform hover:scale-105 active:scale-95 shadow-lg">
+          <button className="mt-10 w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-900 py-6 rounded-2xl font-bold text-xl hover:from-yellow-300 hover:to-yellow-200 transition transform hover:scale-105 active:scale-95 shadow-lg">
             Comprar ahora en Mercado Libre
           </button>
         </div>
