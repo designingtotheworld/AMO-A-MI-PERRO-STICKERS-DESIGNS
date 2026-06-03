@@ -246,7 +246,7 @@ export default function App() {
              <img src="https://i.imgur.com/1v94WvA.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/EPmGZDg.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/AnHF9ML.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
-             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
+             <img src="https://i.imgur.com/jfQKE4l.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
              <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
              <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
