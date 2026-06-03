@@ -79,7 +79,7 @@ export default function App() {
             </div>
           </div>
 
-          <span className="text-sm font-semibold tracking-widest text-sky-500 uppercase">Colección Pasiones Argentinas</span>
+          <img src="https://i.imgur.com/jzZyMjY.png" alt="Colección Pasiones Argentinas" className="w-full max-w-[300px] mx-auto my-4" referrerPolicy="no-referrer" />
           <h1 className="mt-4 text-5xl md:text-6xl font-display tracking-tight text-gray-900">
             Convertí a tu mascota en parte de tu pasión.<br />
             Plancha de 10 stickers UV DTF premium personalizados con su foto.
