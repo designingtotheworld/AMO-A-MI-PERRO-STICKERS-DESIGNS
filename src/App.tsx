@@ -56,6 +56,24 @@ export default function App() {
             referrerPolicy="no-referrer"
           />
 
+          <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
+            <motion.button 
+              className="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition"
+              animate={{ y: [0, -5, 0] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            >
+              Quiero la colección de mi mascota ahora
+            </motion.button>
+            <p className="text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana</p>
+            <motion.button 
+              className="bg-green-600 text-white px-8 py-4 rounded-full font-medium hover:bg-green-700 transition"
+              animate={{ y: [0, -5, 0] }}
+              transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+            >
+              RESERVA TU LUGAR YA
+            </motion.button>
+          </div>
+
           <span className="text-sm font-semibold tracking-widest text-sky-500 uppercase">Colección Pasiones Argentinas</span>
           <h1 className="mt-4 text-4xl md:text-5xl font-display tracking-tight text-gray-900">
             Convertí a tu mascota en parte de tu pasión.<br />
@@ -133,13 +151,13 @@ export default function App() {
           </div>
             
           <h2 className="text-4xl font-display font-medium">¿Cómo recibo mi colección?</h2>
-          <div className="mt-8 grid md:grid-cols-4 gap-4 text-sm font-semibold">
+          <div className="mt-8 grid md:grid-cols-4 gap-4 text-base font-semibold">
             <div className="p-4 bg-white rounded-lg text-blue-900">1. Comprás la plancha en Mercado Libre.</div>
             <div className="p-4 bg-white rounded-lg text-blue-900">2. Nos mandás la foto de tu mascota por mensaje.</div>
             <div className="p-4 bg-white rounded-lg text-blue-900">3. Diseñamos e imprimimos en tecnología UV DTF.</div>
             <div className="p-4 bg-white rounded-lg text-blue-900">4. Recibís el kit terminado en tu casa.</div>
           </div>
-          <p className="mt-6 text-sky-100 italic text-sm">* Importante: Los 5 diseños son fijos. No hace falta aprobar diseño. Envianos una foto clara y de frente de tu mascota para mejor resultado.</p>
+          <p className="mt-6 text-sky-100 italic text-base">* Importante: Los 5 diseños son fijos. No hace falta aprobar diseño. Envianos una foto clara y de frente de tu mascota para mejor resultado.</p>
         </div>
       </section>
 
@@ -171,6 +189,12 @@ export default function App() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Precio destaque */}
+      <section className="py-12 bg-gray-100 text-center">
+         <div className="text-xl font-semibold text-gray-800">Encargala hoy por solo:</div>
+         <div className="text-5xl font-bold text-gray-900 mt-2">$ARS 24.999</div>
       </section>
 
       {/* Opiniones */}
