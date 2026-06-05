@@ -57,21 +57,27 @@ export default function App() {
           />
 
           <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
-            <motion.button 
-              className="bg-yellow-400 text-black px-10 py-5 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg"
+            <motion.a 
+              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-yellow-400 text-black px-10 py-5 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
               ¡Quiero mi colección ahora!
-            </motion.button>
+            </motion.a>
             <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
-            <motion.button 
-              className="bg-gradient-to-r from-green-600 to-green-500 text-white px-10 py-5 rounded-full font-bold hover:from-green-500 hover:to-green-400 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg"
+            <motion.a 
+              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-green-600 to-green-500 text-white px-10 py-5 rounded-full font-bold hover:from-green-500 hover:to-green-400 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
             >
               RESERVA TU LUGAR YA
-            </motion.button>
+            </motion.a>
             <div className="mt-4 bg-yellow-400 p-6 rounded-3xl shadow-2xl border border-yellow-500 text-center">
               <div className="text-lg font-semibold text-gray-700 uppercase tracking-widest">Encargala hoy por solo:</div>
               <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 24.999</div>
@@ -105,21 +111,27 @@ export default function App() {
                 </ul>
             </div>
 
-            <motion.button 
-              className="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition"
+            <motion.a 
+              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition text-center"
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
               Quiero la colección de mi mascota ahora
-            </motion.button>
+            </motion.a>
             <p className="mt-4 text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana para garantizar la calidad</p>
-            <motion.button 
+            <motion.a 
+              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 flex justify-center items-center gap-2 text-white bg-black hover:bg-gray-800 rounded-full py-3 px-6 w-fit mx-auto border border-black font-semibold text-sm shadow-sm transition-all"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
             >
               <span>RESERVA TU LUGAR YA</span>
-            </motion.button>
+            </motion.a>
 
             <div className="mt-8 mb-6 inline-block">
                 <div className="flex items-center gap-3 bg-yellow-400 text-gray-900 px-6 py-4 rounded-xl border border-yellow-500 shadow-lg">
@@ -266,9 +278,14 @@ export default function App() {
             </div>
           </div>
           
-          <button className="mt-10 w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-900 py-6 rounded-2xl font-bold text-xl hover:from-yellow-300 hover:to-yellow-200 transition transform hover:scale-105 active:scale-95 shadow-lg">
+          <a 
+            href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 w-full block text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-900 py-6 rounded-2xl font-bold text-xl hover:from-yellow-300 hover:to-yellow-200 transition transform hover:scale-105 active:scale-95 shadow-lg"
+          >
             ENCARGÁ LA TUYA AHORA
-          </button>
+          </a>
         </div>
       </section>
     </div>
