@@ -35,7 +35,7 @@ export default function App() {
           />
 
           <img
-            src="https://i.imgur.com/fMFI17h.png"
+            src="https://i.imgur.com/KHp7Fzw.png"
             alt="Detalle del kit"
             className="w-full max-w-2xl mx-auto mb-10"
             referrerPolicy="no-referrer"
@@ -204,7 +204,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col">
               <p className="text-gray-700 italic flex-grow">"Perdí a mi perrito abruptamente y lo extraño siempre. Poder tenerlo ahora en mis cosas es increíble, gracias por este producto tan genial."</p>
-              <p className="mt-6 font-semibold">- Agustina</p>
+              <p className="mt-6 font-semibold">- Juan Ignacio</p>
             </div>
             
             <img                
@@ -216,20 +216,20 @@ export default function App() {
             
             <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col">
               <p className="text-gray-700 italic flex-grow">"Impresionante la calidad. Pedí los stickers y los puse en mi termo y en la taza que uso todos los días. Se lavan, se mojan, y siguen intactos. Resistentes al microondas. Realmente se ven súper premium, nada que ver con esas cosas baratas que se despegan a los dos días."</p>
-              <p className="mt-6 font-semibold">- Juanjo</p>
-            </div>
-            
-            <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col">
-              <p className="text-gray-700 italic flex-grow">"Es increíble tener literalmente a mi mascota en mis objetos. No es una raza genérica, es mi perro hecho sticker. Estaba cansada de diseños infantiles y buscaba algo estético y minimalista que combinara con mis cosas, y este servicio me dio justo eso. Un lujo total."</p>
-              <p className="mt-6 font-semibold">- Sofía</p>
+              <p className="mt-6 font-semibold">- Jazmin</p>
             </div>
             
             <img                
-              src="https://i.imgur.com/LGvPoEH.png"
-              alt="Testimonio visual adicional"
+              src="https://i.imgur.com/9OEu4eU.png"
+              alt="Testimonio visual extra"
               className="w-full h-full object-cover rounded-2xl shadow-sm"
               referrerPolicy="no-referrer"
             />
+            
+            <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col">
+              <p className="text-gray-700 italic flex-grow">"Es increíble tener literalmente a mi mascota en mis objetos. No es una raza genérica, es mi perro hecho sticker. Estaba cansada de diseños infantiles y buscaba algo estético y minimalista que combinara con mis cosas, y este servicio me dio justo eso. Un lujo total."</p>
+              <p className="mt-6 font-semibold">- Agustina</p>
+            </div>
           </div>
         </div>
       </section>
