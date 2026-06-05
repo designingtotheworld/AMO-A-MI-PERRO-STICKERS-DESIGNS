@@ -90,7 +90,7 @@ export default function App() {
             Convertí a tu mascota en parte de tu pasión.<br />
             Plancha de 10 stickers UV DTF premium personalizados con su foto.
           </h1>
-          <p className="mt-6 text-2xl text-gray-700 max-w-2xl mx-auto font-hand">Impresión UV DTF de alta calidad, resistente al agua y brillante. Tu mascota, lista para pegar en donde quieras.</p>
+          <p className="mt-6 text-2xl text-gray-700 max-w-2xl mx-auto font-hand">Impresión UV DTF premium estilo acuarela, resistente al agua y brillante. Tu mascota, lista para pegar en donde quieras.</p>
           <div className="mt-10">
             <img 
               src="https://i.imgur.com/tfzoikl.png"
@@ -260,7 +260,7 @@ export default function App() {
              <img src="https://i.imgur.com/AnHF9ML.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/jfQKE4l.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/sd60Bhn.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
-             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
+             <img src="https://i.imgur.com/dnL0XRo.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
              <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
           </div>
