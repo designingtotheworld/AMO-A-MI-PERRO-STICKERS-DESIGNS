@@ -173,7 +173,7 @@ export default function App() {
             <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">1. Comprás la plancha en nuestra tienda.</div>
             <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">2. Nos mandás la foto de tu mascota por mensaje.</div>
             <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">3. Diseñamos e imprimimos en tecnología UV DTF.</div>
-            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">4. Recibís el kit terminado en tu casa.</div>
+            <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">4. En 5-10 días hábiles el producto está listo y lo enviamos a tu dirección por correo.</div>
           </div>
           <p className="mt-8 text-sky-100 italic text-lg opacity-90">* Importante: Los 5 diseños son fijos. No hace falta aprobar diseño. Envianos una foto clara y de frente de tu mascota para mejor resultado.</p>
         </div>
