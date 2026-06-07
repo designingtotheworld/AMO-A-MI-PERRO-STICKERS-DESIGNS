@@ -96,6 +96,12 @@ export default function App() {
             <img 
               src="https://i.imgur.com/tfzoikl.png"
               alt="Plancha de stickers"
+              className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-4"
+              referrerPolicy="no-referrer"
+            />
+            <img 
+              src="https://i.imgur.com/h4nVPBK.png"
+              alt="Detalle de stickers"
               className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-12"
               referrerPolicy="no-referrer"
             />
