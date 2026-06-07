@@ -61,7 +61,7 @@ export default function App() {
               href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-yellow-400 text-black px-10 py-5 rounded-full font-bold hover:bg-yellow-300 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
+              className="bg-green-600 text-white px-10 py-5 rounded-full font-bold hover:bg-green-700 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
@@ -78,10 +78,11 @@ export default function App() {
             >
               RESERVA TU LUGAR YA
             </motion.a>
-            <div className="mt-4 bg-yellow-400 p-6 rounded-3xl shadow-2xl border border-yellow-500 text-center">
+            <div className="mt-4 bg-white p-6 rounded-3xl shadow-lg border border-gray-100 text-center">
               <div className="text-lg font-semibold text-gray-700 uppercase tracking-widest">Encargala hoy por solo:</div>
               <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 24.999</div>
               <p className="mt-1 text-gray-800 italic font-medium">¡Pedila ahora desde nuestra tienda!</p>
+              <p className="mt-3 text-sm text-gray-900 font-semibold bg-green-50 rounded-lg p-2 shadow-sm border border-green-100">📦 Tiempo de entrega: 5 a 10 días hábiles desde que recibimos la foto de tu mascota.</p>
             </div>
           </div>
 
@@ -115,7 +116,7 @@ export default function App() {
               href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition text-center"
+              className="bg-green-600 text-white px-8 py-4 rounded-full font-medium hover:bg-green-700 transition text-center"
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
@@ -126,7 +127,7 @@ export default function App() {
               href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 flex justify-center items-center gap-2 text-white bg-black hover:bg-gray-800 rounded-full py-3 px-6 w-fit mx-auto border border-black font-semibold text-sm shadow-sm transition-all"
+              className="mt-4 flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-3 px-6 w-fit mx-auto border border-green-600 font-semibold text-sm shadow-sm transition-all"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
             >
@@ -268,7 +269,7 @@ export default function App() {
       </section>
 
       {/* Precio & Bono */}
-      <section className="py-20 px-6 text-center">
+      <section className="py-20 px-6 text-center bg-white">
         <div className="max-w-xl mx-auto bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
           <p className="mt-6 text-2xl md:text-3xl font-bold text-gray-900">Tener una plancha de stickers de tu propia mascota no tiene precio.</p>
           <div className="mt-8">
@@ -276,13 +277,14 @@ export default function App() {
             <div className="mt-2 text-5xl font-extrabold text-gray-900">
               $ARS 24.999
             </div>
+            <p className="mt-4 text-sm text-gray-900 font-semibold bg-green-50 rounded-lg p-3 border border-green-100">📦 Tiempo de entrega: 5 a 10 días hábiles desde que recibimos la foto de tu mascota.</p>
           </div>
           
           <a 
             href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 w-full block text-center bg-gradient-to-r from-yellow-400 to-yellow-300 text-gray-900 py-6 rounded-2xl font-bold text-xl hover:from-yellow-300 hover:to-yellow-200 transition transform hover:scale-105 active:scale-95 shadow-lg"
+            className="mt-10 w-full block text-center bg-green-600 text-white py-6 rounded-2xl font-bold text-xl hover:bg-green-700 transition transform hover:scale-105 active:scale-95 shadow-lg"
           >
             ENCARGÁ LA TUYA AHORA
           </a>
