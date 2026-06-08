@@ -71,7 +71,7 @@ export default function App() {
             </motion.a>
             <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
             <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
+              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-green-600 to-green-500 text-white px-10 py-5 rounded-full font-bold hover:from-green-500 hover:to-green-400 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
@@ -121,7 +121,7 @@ export default function App() {
             </div>
 
             <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
+              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 text-white px-8 py-4 rounded-full font-medium hover:bg-green-700 transition text-center"
@@ -132,7 +132,7 @@ export default function App() {
             </motion.a>
             <p className="mt-4 text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana para garantizar la calidad</p>
             <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
+              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-3 px-6 w-fit mx-auto border border-green-600 font-semibold text-sm shadow-sm transition-all"
@@ -346,7 +346,7 @@ export default function App() {
           </div>
           
           <a 
-            href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
+            href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 w-full block text-center bg-green-600 text-white py-6 rounded-2xl font-bold text-xl hover:bg-green-700 transition transform hover:scale-105 active:scale-95 shadow-lg"
