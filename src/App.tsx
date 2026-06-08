@@ -10,7 +10,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Check, Star, Sparkles, Image as ImageIcon } from 'lucide-react';
+import { Check, Star, Sparkles, Image as ImageIcon, Mail, ShoppingBag, Send } from 'lucide-react';
 
 export default function App() {
   const [purchasers, setPurchasers] = useState(48);
@@ -58,10 +58,12 @@ export default function App() {
 
           <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
             <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-600 text-white px-10 py-5 rounded-full font-bold hover:bg-green-700 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
+              href="#oferta"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('oferta')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-green-600 text-white px-10 py-5 rounded-full font-bold hover:bg-green-700 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center cursor-pointer"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
@@ -69,7 +71,7 @@ export default function App() {
             </motion.a>
             <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
             <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+              href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-green-600 to-green-500 text-white px-10 py-5 rounded-full font-bold hover:from-green-500 hover:to-green-400 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
@@ -86,7 +88,7 @@ export default function App() {
             </div>
           </div>
 
-          <img src="https://i.imgur.com/jzZyMjY.png" alt="Colección Pasiones Argentinas" className="w-full max-w-[300px] mx-auto my-4" referrerPolicy="no-referrer" />
+          <img id="oferta" src="https://i.imgur.com/jzZyMjY.png" alt="Colección Pasiones Argentinas" className="w-full max-w-[300px] mx-auto my-4 scroll-mt-24" referrerPolicy="no-referrer" />
           <h1 className="mt-4 text-5xl md:text-6xl font-display tracking-tight text-gray-900">
             Convertí a tu mascota en parte de tu pasión.<br />
             Plancha de 10 stickers UV DTF premium personalizados con su foto.
@@ -119,7 +121,7 @@ export default function App() {
             </div>
 
             <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+              href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 text-white px-8 py-4 rounded-full font-medium hover:bg-green-700 transition text-center"
@@ -130,7 +132,7 @@ export default function App() {
             </motion.a>
             <p className="mt-4 text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana para garantizar la calidad</p>
             <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+              href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-3 px-6 w-fit mx-auto border border-green-600 font-semibold text-sm shadow-sm transition-all"
@@ -182,6 +184,63 @@ export default function App() {
             <div className="p-6 bg-white rounded-2xl text-blue-900 shadow-md">4. En 5-10 días hábiles el producto está listo y lo enviamos a tu dirección por correo.</div>
           </div>
           <p className="mt-8 text-sky-100 italic text-lg opacity-90">* Importante: Los 5 diseños son fijos. No hace falta aprobar diseño. Envianos una foto clara y de frente de tu mascota para mejor resultado.</p>
+        </div>
+      </section>
+
+      {/* Instrucciones Post-Compra */}
+      <section className="py-20 px-6 bg-green-50 border-t border-b border-green-100">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="bg-green-100 text-green-800 text-xs px-4 py-1.5 rounded-full font-bold uppercase tracking-wider">¡Es facilísimo!</span>
+            <h3 className="text-3xl md:text-4xl font-display font-black text-gray-900 mt-3">💬 Qué hacer una vez que comprás:</h3>
+            <p className="mt-3 text-lg text-gray-600 max-w-xl mx-auto">Una vez que completes el pago, el proceso sigue de esta manera tan sencilla:</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-green-100 flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white">
+                <ShoppingBag className="w-5 h-5" />
+              </div>
+              <div>
+                <span className="font-mono text-xs text-green-600 font-bold uppercase tracking-wider">Paso 1</span>
+                <h4 className="font-extrabold text-gray-900 text-base mt-0.5">Clickeá en comprar</h4>
+                <p className="text-gray-600 text-sm mt-1.5">Hacé clic en los botones de nuestra tienda para realizar tu pedido de forma 100% segura.</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-green-100 flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white">
+                <Mail className="w-5 h-5" />
+              </div>
+              <div>
+                <span className="font-mono text-xs text-green-600 font-bold uppercase tracking-wider">Paso 2</span>
+                <h4 className="font-extrabold text-gray-900 text-base mt-0.5">Recibí el mail de SHOPIFY</h4>
+                <p className="text-gray-600 text-sm mt-1.5">Te llegará un correo de confirmación de compra desde <strong>Shopify</strong>. ¡Por las dudas <strong>revisá tu casilla de Spam o Correo No Deseado</strong>!</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-green-100 flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white">
+                <Send className="w-5 h-5" />
+              </div>
+              <div>
+                <span className="font-mono text-xs text-green-600 font-bold uppercase tracking-wider">Paso 3</span>
+                <h4 className="font-extrabold text-gray-900 text-base mt-0.5">Envianos la foto</h4>
+                <p className="text-gray-600 text-sm mt-1.5">Seguí las instrucciones de ese mail y <strong>respondelo enviándonos la foto de tu mascota</strong> (perro, gato, la que quieras).</p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-green-100 flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white">
+                <Check className="w-5 h-5" />
+              </div>
+              <div>
+                <span className="font-mono text-xs text-green-600 font-bold uppercase tracking-wider">Paso 4</span>
+                <h4 className="font-extrabold text-gray-900 text-base mt-0.5">¡Y listo!</h4>
+                <p className="text-gray-600 text-sm mt-1.5">En unos días te avisamos cuando esté lista tu plancha de stickers y la mandamos directo a tu casa x correo.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -287,7 +346,7 @@ export default function App() {
           </div>
           
           <a 
-            href="https://ux0sm3-jg.myshopify.com/products/plancha-de-stickers-uv-personalizados-amo-a-mi-mascota-coleccion-pasiones-argentinas?variant=44181517402200"
+            href="https://ux0sm3-jg.myshopify.com/cart/8795716419672:1"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 w-full block text-center bg-green-600 text-white py-6 rounded-2xl font-bold text-xl hover:bg-green-700 transition transform hover:scale-105 active:scale-95 shadow-lg"
