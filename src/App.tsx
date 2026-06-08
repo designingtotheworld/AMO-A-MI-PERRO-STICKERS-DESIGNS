@@ -30,7 +30,7 @@ export default function App() {
           <img
             src="https://i.imgur.com/WLmr006.png"
             alt="Logo Amo a Mascota"
-            className="w-full max-w-[160px] mx-auto mt-0 mb-4"
+            className="w-full max-w-[120px] mx-auto mt-0 mb-4"
             referrerPolicy="no-referrer"
           />
 
@@ -43,41 +43,20 @@ export default function App() {
 
 
           <img
-            src="https://i.imgur.com/K1NIHpu.png"
+            src="https://i.imgur.com/9OEu4eU.png"
             alt="Ejemplo de stickers de mascota"
             className="w-full rounded-xl shadow-lg mb-12"
             referrerPolicy="no-referrer"
           />
 
-          <img
-            src="https://i.imgur.com/SCzrad7.png"
-            alt="Detalle adicional de stickers"
-            className="w-full rounded-xl shadow-lg mb-12"
-            referrerPolicy="no-referrer"
-          />
+          <img src="https://i.imgur.com/YqnoP83.png" alt="Detalle de stickers adicionales" className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-4" referrerPolicy="no-referrer" />
+        </motion.div>
+      </header>
 
+      <section className="px-6 pb-20">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
-            <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-600 text-white px-10 py-5 rounded-full font-bold hover:bg-green-700 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
-              animate={{ y: [0, -5, 0] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            >
-              ¡Quiero mi colección ahora!
-            </motion.a>
             <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
-            <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-green-600 to-green-500 text-white px-10 py-5 rounded-full font-bold hover:from-green-500 hover:to-green-400 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
-              animate={{ y: [0, -5, 0] }}
-              transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
-            >
-              RESERVA TU LUGAR YA
-            </motion.a>
             <div className="mt-4 bg-white p-6 rounded-3xl shadow-lg border border-gray-100 text-center">
               <div className="text-lg font-semibold text-gray-700 uppercase tracking-widest">Encargala hoy por solo:</div>
               <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 24.999</div>
@@ -87,6 +66,8 @@ export default function App() {
           </div>
 
           <img id="oferta" src="https://i.imgur.com/jzZyMjY.png" alt="Colección Pasiones Argentinas" className="w-full max-w-[300px] mx-auto my-4 scroll-mt-24" referrerPolicy="no-referrer" />
+          <img src="https://i.imgur.com/uruSO5c.png" alt="Foto adicional de mascota" className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-4" referrerPolicy="no-referrer" />
+
           <h1 className="mt-4 text-5xl md:text-6xl font-display tracking-tight text-gray-900">
             Convertí a tu mascota en parte de tu pasión.<br />
             Plancha de 10 stickers UV DTF premium personalizados con su foto.
@@ -122,17 +103,6 @@ export default function App() {
               href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 text-white px-8 py-4 rounded-full font-medium hover:bg-green-700 transition text-center"
-              animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            >
-              Quiero la colección de mi mascota ahora
-            </motion.a>
-
-            <motion.a 
-              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
-              target="_blank"
-              rel="noopener noreferrer"
               className="mt-4 flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-3 px-6 w-fit mx-auto border border-green-600 font-semibold text-sm shadow-sm transition-all"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
@@ -152,8 +122,7 @@ export default function App() {
             </div>
           </div>
         </motion.div>
-      </header>
-
+      </section>
       {/* Problema & Transformación */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto">
@@ -272,7 +241,6 @@ export default function App() {
         </div>
       </section>
 
-
       {/* Opiniones */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -295,13 +263,6 @@ export default function App() {
               <p className="mt-6 font-semibold">- Jazmin</p>
             </div>
             
-            <img                
-              src="https://i.imgur.com/9OEu4eU.png"
-              alt="Testimonio visual extra"
-              className="w-full h-full object-cover rounded-2xl shadow-sm"
-              referrerPolicy="no-referrer"
-            />
-            
             <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm flex flex-col">
               <p className="text-gray-700 italic flex-grow">"Es increíble tener literalmente a mi mascota en mis objetos. No es una raza genérica, es mi perro hecho sticker. Estaba cansada de diseños infantiles y buscaba algo estético y minimalista que combinara con mis cosas, y este servicio me dio justo eso. Un lujo total."</p>
               <p className="mt-6 font-semibold">- Agustina</p>
@@ -310,8 +271,9 @@ export default function App() {
         </div>
       </section>
 
+
       {/* Clientes */}
-      <section className="py-20 px-6 bg-white">
+      <section className="pt-10 pb-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-display font-medium text-center mb-16">Algunos de nuestros clientes</h3>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
@@ -325,8 +287,6 @@ export default function App() {
              <img src="https://i.imgur.com/jfQKE4l.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/sd60Bhn.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/dnL0XRo.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
-             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
-             <div className="rounded-2xl h-64 w-full border-2 border-dashed border-gray-200 flex items-center justify-center text-gray-400 text-3xl font-light">+</div>
           </div>
         </div>
       </section>
@@ -342,15 +302,6 @@ export default function App() {
             </div>
             <p className="mt-4 text-sm text-gray-900 font-semibold bg-green-50 rounded-lg p-3 border border-green-100">📦 Tiempo de entrega: 5 a 10 días hábiles desde que recibimos la foto de tu mascota.</p>
           </div>
-          
-          <a 
-            href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-10 w-full block text-center bg-green-600 text-white py-6 rounded-2xl font-bold text-xl hover:bg-green-700 transition transform hover:scale-105 active:scale-95 shadow-lg"
-          >
-            ENCARGÁ LA TUYA AHORA
-          </a>
         </div>
       </section>
     </div>
