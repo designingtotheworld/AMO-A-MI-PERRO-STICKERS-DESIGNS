@@ -3,11 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Check, Star, Sparkles, Image as ImageIcon, Mail, ShoppingBag, Send } from 'lucide-react';
@@ -57,11 +52,22 @@ export default function App() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
             <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
-            <div className="mt-4 bg-white p-6 rounded-3xl shadow-lg border border-gray-100 text-center">
+            <div className="mt-4 bg-white p-6 rounded-3xl shadow-lg border border-gray-100 text-center flex flex-col items-center">
               <div className="text-lg font-semibold text-gray-700 uppercase tracking-widest">Encargala hoy por solo:</div>
               <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 24.999</div>
-              <p className="mt-1 text-gray-800 italic font-medium">¡Pedila ahora desde nuestra tienda!</p>
-              <p className="mt-3 text-sm text-gray-900 font-semibold bg-green-50 rounded-lg p-2 shadow-sm border border-green-100">📦 Tiempo de entrega: 5 a 10 días hábiles desde que recibimos la foto de tu mascota.</p>
+              
+              <motion.a 
+                href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 mb-4 flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-3 px-8 w-full font-bold text-base shadow-md transition-all"
+                animate={{ scale: [1, 1.03, 1] }}
+                transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              >
+                COMPRAR AHORA
+              </motion.a>
+
+              <p className="text-sm text-gray-900 font-semibold bg-green-50 rounded-lg p-2 shadow-sm border border-green-100 w-full">📦 Tiempo de entrega: 5 a 10 días hábiles desde que recibimos la foto de tu mascota.</p>
             </div>
           </div>
 
@@ -72,7 +78,7 @@ export default function App() {
             Convertí a tu mascota en parte de tu pasión.<br />
             Plancha de 10 stickers UV DTF premium personalizados con su foto.
           </h1>
-          <p className="mt-6 text-2xl text-gray-700 max-w-2xl mx-auto font-hand">Impresión UV DTF premium estilo acuarela, resistente al agua y brillante. Tu mascota, lista para pegar en donde quieras.</p>
+          <p className="mt-6 text-2xl text-gray-700 max-w-2xl mx-auto font-hand">Impresión UV DTF premium estilo acuarela, resistant al agua y brillante. Tu mascota, lista para pegar en donde quieras.</p>
           <div className="mt-10">
             <img 
               src="https://i.imgur.com/tfzoikl.png"
@@ -109,17 +115,6 @@ export default function App() {
             >
               <span>RESERVA TU LUGAR YA</span>
             </motion.a>
-
-            <div className="mt-8 mb-6 inline-block">
-                <div className="flex items-center gap-3 bg-yellow-400 text-gray-900 px-6 py-4 rounded-xl border border-yellow-500 shadow-lg">
-                    <div className="text-4xl font-mono text-gray-900 font-bold tabular-nums tracking-wider">
-                        {purchasers}
-                    </div>
-                    <div className="text-xs border-l border-yellow-600 pl-3 leading-tight uppercase tracking-wide font-medium text-gray-800">
-                        personas encargando <br/>en este momento
-                    </div>
-                </div>
-            </div>
           </div>
         </motion.div>
       </section>
@@ -211,6 +206,21 @@ export default function App() {
         </div>
       </section>
 
+      {/* Video Demostración */}
+      <section className="py-10 px-6 bg-white text-center">
+        <h3 className="text-2xl font-display font-medium mb-6">¿Cómo colocar tus stickers?</h3>
+        <div className="max-w-md mx-auto rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+          <video
+            className="w-full h-auto"
+            autoPlay
+            loop
+            muted
+            playsInline
+            src="https://i.imgur.com/s4mfgep.mp4"
+          />
+        </div>
+      </section>
+
       {/* Incluye */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -271,7 +281,6 @@ export default function App() {
         </div>
       </section>
 
-
       {/* Clientes */}
       <section className="pt-10 pb-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -288,19 +297,53 @@ export default function App() {
              <img src="https://i.imgur.com/sd60Bhn.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
              <img src="https://i.imgur.com/dnL0XRo.png" alt="Cliente" className="rounded-2xl h-64 w-full object-cover shadow-sm" referrerPolicy="no-referrer" />
           </div>
+          <div className="mt-6 flex flex-col justify-center items-center">
+            <motion.a 
+              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-4 px-10 border border-green-600 font-semibold text-lg shadow-md transition-all"
+              animate={{ y: [0, -5, 0] }}
+              transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
+            >
+              LA QUIEROOOOO
+            </motion.a>
+            <div className="mt-8 mb-6">
+                <div className="flex items-center gap-3 bg-yellow-400 text-gray-900 px-6 py-4 rounded-xl border border-yellow-500 shadow-lg">
+                    <div className="text-4xl font-mono text-gray-900 font-bold tabular-nums tracking-wider">
+                        {purchasers}
+                    </div>
+                    <div className="text-xs border-l border-yellow-600 pl-3 leading-tight uppercase tracking-wide font-medium text-gray-800">
+                        personas encargando <br/>en este momento
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Precio & Bono */}
-      <section className="py-20 px-6 text-center bg-white">
+      <section className="pt-10 pb-20 px-6 text-center bg-white">
         <div className="max-w-xl mx-auto bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
           <p className="mt-6 text-2xl md:text-3xl font-bold text-gray-900">Tener una plancha de stickers de tu propia mascota no tiene precio.</p>
-          <div className="mt-8">
+          <div className="mt-8 flex flex-col items-center">
             <p className="text-lg font-semibold text-gray-700">ENCÁRGALA HOY POR SÓLO</p>
             <div className="mt-2 text-5xl font-extrabold text-gray-900">
               $ARS 24.999
             </div>
-            <p className="mt-4 text-sm text-gray-900 font-semibold bg-green-50 rounded-lg p-3 border border-green-100">📦 Tiempo de entrega: 5 a 10 días hábiles desde que recibimos la foto de tu mascota.</p>
+            
+            <motion.a 
+              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 mb-5 flex justify-center items-center gap-2 text-white bg-green-600 hover:bg-green-700 rounded-full py-4 px-12 w-full max-w-sm font-bold text-lg shadow-lg transition-all"
+              animate={{ scale: [1, 1.03, 1] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            >
+              ENCARGALA HOY
+            </motion.a>
+
+            <p className="text-sm text-gray-900 font-semibold bg-green-50 rounded-lg p-3 border border-green-100 w-full">📦 Tiempo de entrega: 5 a 10 días hábiles desde que recibimos la foto de tu mascota.</p>
           </div>
         </div>
       </section>
