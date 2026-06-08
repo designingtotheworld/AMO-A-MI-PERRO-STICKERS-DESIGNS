@@ -58,12 +58,10 @@ export default function App() {
 
           <div className="mt-8 flex flex-col gap-4 max-w-sm mx-auto mb-10">
             <motion.a 
-              href="#oferta"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('oferta')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="bg-green-600 text-white px-10 py-5 rounded-full font-bold hover:bg-green-700 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center cursor-pointer"
+              href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-600 text-white px-10 py-5 rounded-full font-bold hover:bg-green-700 transition shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 text-lg text-center"
               animate={{ y: [0, -5, 0] }}
               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             >
@@ -130,7 +128,7 @@ export default function App() {
             >
               Quiero la colección de mi mascota ahora
             </motion.a>
-            <p className="mt-4 text-orange-600 text-sm font-semibold">⚠️ Cupos limitados por semana para garantizar la calidad</p>
+
             <motion.a 
               href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
               target="_blank"
