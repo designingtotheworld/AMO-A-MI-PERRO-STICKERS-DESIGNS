@@ -49,7 +49,7 @@ export default function App() {
             referrerPolicy="no-referrer"
           />
 
-          <img src="https://i.imgur.com/AGmg6Nc.png" alt="Detalle de stickers adicionales" className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-4" referrerPolicy="no-referrer" />
+          <img src="https://i.imgur.com/RdB48q6.png" alt="Detalle de stickers adicionales" className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-4" referrerPolicy="no-referrer" />
         </motion.div>
       </header>
 
@@ -78,22 +78,23 @@ export default function App() {
 
           <img id="oferta" src="https://i.imgur.com/jzZyMjY.png" alt="Colección Pasiones Argentinas" className="w-full max-w-[300px] mx-auto my-4 scroll-mt-24" referrerPolicy="no-referrer" />
 
+          <img 
+            src="https://i.imgur.com/AGmg6Nc.png"
+            alt="Plancha de stickers"
+            className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-6"
+            referrerPolicy="no-referrer"
+          />
+
           <h1 className="mt-4 text-5xl md:text-6xl font-display tracking-tight text-gray-900">
             Convertí a tu mascota en parte de tu pasión.<br />
             Plancha de 7 stickers UV DTF premium personalizados a partir de su foto.
           </h1>
-          <div className="mt-6">
+          <div className="mt-6 flex flex-col items-center">
             <button className="bg-yellow-400 text-gray-950 font-medium py-3 px-6 rounded-full text-base tracking-wide shadow-md">
               sticker premium apto microndas
             </button>
-          </div>
+           </div>
           <div className="mt-10">
-            <img 
-              src="https://i.imgur.com/RdB48q6.png"
-              alt="Plancha de stickers"
-              className="w-full max-w-lg mx-auto rounded-xl shadow-lg mb-4"
-              referrerPolicy="no-referrer"
-            />
             <img 
               src="https://i.imgur.com/h4nVPBK.png"
               alt="Detalle de stickers"
