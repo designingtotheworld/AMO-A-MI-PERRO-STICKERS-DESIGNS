@@ -59,7 +59,7 @@ export default function App() {
             <p className="text-orange-600 text-sm font-semibold text-center">⚠️ Cupos limitados por semana</p>
             <div className="mt-4 bg-white p-6 rounded-3xl shadow-lg border border-gray-100 text-center flex flex-col items-center">
               <div className="text-lg font-semibold text-gray-700 uppercase tracking-widest">Encargala hoy por solo:</div>
-              <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 19.000</div>
+              <div className="text-4xl font-extrabold text-gray-900 mt-2">$ARS 19.990</div>
               
               <motion.a 
                 href="https://ux0sm3-jg.myshopify.com/cart/44181517402200:1"
@@ -236,7 +236,7 @@ export default function App() {
           <div className="mt-8 flex flex-col items-center">
             <p className="text-lg font-semibold text-gray-700">ENCÁRGALA HOY POR SÓLO</p>
             <div className="mt-2 text-5xl font-extrabold text-gray-900">
-              $ARS 19.000
+              $ARS 19.990
             </div>
             
             <motion.a 
